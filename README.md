@@ -2,7 +2,7 @@ txtIt
 
 Why txtIt?
 
-I decided to make this website to apply and further my knowledge on the following tools: html, css, flask, python3 and postgresql.
+I decided to make this website to apply and further my knowledge on the following tools: html, css, flask, python3 and postgresql. This website is being developed on ubuntu.
 
 Goals:
 
@@ -18,3 +18,7 @@ Technologies I plan on using:
 3. Python3
 4. Flask
 5. Postgresql
+
+Flask alchemy 
+Psycopg2 was installed because it is the adapter that allows psqlalchemy to work with postgresql.
+Flask migrate was installed(tool that helps us interact with databases and tables).
