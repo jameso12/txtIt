@@ -11,13 +11,14 @@ Goals:
 3. Use postgresql as database (for the added challenge of diverting from the most tutorials).
 4. Avoid searching for tutorials of anyhing similar like the flask tutorial, or tutorials that make a website that is similar to this one.
 
-Technologies I plan on using:
+Technologies I being used:
 
 1. HTML
 2. CSS
 3. Python3
 4. Flask
 5. Postgresql
+6. Jinja2
 
 Flask alchemy 
 Psycopg2 was installed because it is the adapter that allows psqlalchemy to work with postgresql.
