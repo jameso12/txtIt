@@ -37,3 +37,9 @@ the way.
 
 After the project works locally, I will look into how i can split the python logic into multiple files without breaking the projects;
 hopefully by the time I look into giving the project a better file structure I would have enough knowledge on how to actually do so.
+
+To make the database I came accross 2 sites that might help:
+Gave an example and used modules that are already installed:
+https://www.compose.com/articles/using-postgresql-through-sqlalchemy/ 
+Serving as docs:
+https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_using_multiple_tables.htm
