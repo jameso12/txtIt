@@ -23,3 +23,6 @@ Technologies I being used:
 Flask alchemy 
 Psycopg2 was installed because it is the adapter that allows psqlalchemy to work with postgresql.
 Flask migrate was installed(tool that helps us interact with databases and tables).
+
+After following along https://www.askpython.com/python-modules/flask/flask-postgresql I will divert from the tutorial and make a simpler flask without the use of the app factory, as my understandng of flask is limited and and the tutorial was not enough for me to such 
+a change to the app.
