@@ -28,4 +28,5 @@ After following along https://www.askpython.com/python-modules/flask/flask-postg
 a change to the app.
 
 Since my main goal as of now is to make the app use postgresql as a database, i will be focusing on learning about that.
-
+I will be following along the video https://www.youtube.com/watch?v=w25ea_I89iM to get my database set and running on my 
+development eviroment and will als use this video to see how to deploe the final project.
