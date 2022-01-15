@@ -32,6 +32,8 @@ I will be following along the video https://www.youtube.com/watch?v=w25ea_I89iM 
 development eviroment and will als use this video to see how to deploe the final project.
 
 Since I have seen/read many tutorials, each with their own unique way of developing this project, I will be putting everything 
-concerning the pythn logic of the project in a single file (main focus is to make this project work locally).
+concerning the pythn logic of the project in a single file (main focus is to make this project work locally). That file is txtitapp.py by
+the way.
+
 After the project works locally, I will look into how i can split the python logic into multiple files without breaking the projects;
 hopefully by the time I look into giving the project a better file structure I would have enough knowledge on how to actually do so.
