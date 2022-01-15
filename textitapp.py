@@ -4,11 +4,11 @@ from models import db, InfoModel
  
 app = Flask(__name__)
  
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://jamesacer:jamesacer@localhost:5432/textitcd"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://jamesacer:jamesacer@localhost:5432/textit"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
  
 db.init_app(app)
-migrate = Migrate(app, db)
+
  
 @app.route('/form')
 def form():

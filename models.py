@@ -1,11 +1,16 @@
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.dialects.postgresql import UUID
+import uuid
+
  
 db = SQLAlchemy()
 # ?? make the 2 table models here?
 class usersModel(db.Model):
     __tablename__ = 'users'
  
-    id = db.Column(db.Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4) # db.Column(db.Integer, primary_key = True)
+    # b.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+
+    id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4) # db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String(), nullable=False)
     password = db.Column(db.Integer(), nullable=False)
  

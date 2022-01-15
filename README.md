@@ -26,3 +26,6 @@ Flask migrate was installed(tool that helps us interact with databases and table
 
 After following along https://www.askpython.com/python-modules/flask/flask-postgresql I will divert from the tutorial and make a simpler flask without the use of the app factory, as my understandng of flask is limited and and the tutorial was not enough for me to such 
 a change to the app.
+
+Since my main goal as of now is to make the app use postgresql as a database, i will be focusing on learning about that.
+
