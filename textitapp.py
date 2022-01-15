@@ -42,7 +42,7 @@ class usersModel(db.Model):
         self.username = username
         self.password = password
  
-class usersModel(db.Model):
+class postsModel(db.Model):
     __tablename__ = 'posts'
  
     # b.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)

@@ -10,8 +10,8 @@ CREATE TABLE users (
 CREATE TABLE posts (
   id uuid PRIMARY KEY DEFAULT uuid_generate_v4 (),
   author_id uuid NOT NULL,
-  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  dateCreated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   title VARCHAR NOT NULL,
-  body VARCHAR NOT NULL,
+  content VARCHAR NOT NULL,
   FOREIGN KEY (author_id) REFERENCES users (id)
 );
