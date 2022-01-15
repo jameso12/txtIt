@@ -2,7 +2,7 @@ txtIt
 
 Why txtIt?
 
-I decided to make this website to apply and further my knowledge on the following tools: html, css, flask, python3 and postgresql. This website is being developed on ubuntu.
+I decided to make this website to apply and further my knowledge on the following tools: html, css, flask, python3 and postgresql. This website is being developed on ubuntu. This webste will be base from the tutorial project at https://flask.palletsprojects.com/en/2.0.x/tutorial/
 
 Goals:
 
