@@ -30,3 +30,8 @@ a change to the app.
 Since my main goal as of now is to make the app use postgresql as a database, i will be focusing on learning about that.
 I will be following along the video https://www.youtube.com/watch?v=w25ea_I89iM to get my database set and running on my 
 development eviroment and will als use this video to see how to deploe the final project.
+
+Since I have seen/read many tutorials, each with their own unique way of developing this project, I will be putting everything 
+concerning the pythn logic of the project in a single file (main focus is to make this project work locally).
+After the project works locally, I will look into how i can split the python logic into multiple files without breaking the projects;
+hopefully by the time I look into giving the project a better file structure I would have enough knowledge on how to actually do so.
