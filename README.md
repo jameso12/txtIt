@@ -6,10 +6,10 @@ I decided to make this website to apply and further my knowledge on the followin
 
 Goals:
 
-1. Figure out how to format/style this md file (make it look decent).
-2. Host it either on heroku or my rasberrypi 4. Preferrably heroku at first since I will probalby need to use heroku on my college course.
-3. Use postgresql as database (for the added challenge of diverting from the most tutorials).
-4. Avoid searching for tutorials of anyhing similar like the flask tutorial, or tutorials that make a website that is similar to this one.
+[] Figure out how to format/style this md file (make it look decent).
+[] Host it either on heroku or my rasberrypi 4. Preferrably heroku at first since I will probalby need to use heroku on my college course.
+[] Use postgresql as database (for the added challenge of diverting from the most tutorials).
+[] Avoid searching for tutorials of anyhing similar like the flask tutorial, or tutorials that make a website that is similar to this one.
 
 Technologies I being used:
 
@@ -39,6 +39,5 @@ After the project works locally, I will look into how i can split the python log
 hopefully by the time I look into giving the project a better file structure I would have enough knowledge on how to actually do so.
 
 To make the database I came accross 2 sites that might help:
-1. Gave an example and used modules that are already installed:
-https://www.compose.com/articles/using-postgresql-through-sqlalchemy/ 
+1. Gave an example and used modules that are already [installed.](https://www.compose.com/articles/using-postgresql-through-sqlalchemy/) 
 2. Serving as [docs](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_using_multiple_tables.htm)
