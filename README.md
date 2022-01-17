@@ -2,7 +2,7 @@ txtIt
 
 Why txtIt?
 
-I decided to make this website to apply and further my knowledge on the following tools: html, css, flask, python3 and postgresql. This website is being developed on ubuntu. This webste will be base from the tutorial project at https://flask.palletsprojects.com/en/2.0.x/tutorial/
+I decided to make this website to apply and further my knowledge on the following tools: html, css, flask, python3 and postgresql. This website is being developed on ubuntu. This webste will be based from the a [tutorial project.](https://flask.palletsprojects.com/en/2.0.x/tutorial/)
 
 Goals:
 
@@ -24,11 +24,11 @@ Flask alchemy
 Psycopg2 was installed because it is the adapter that allows psqlalchemy to work with postgresql.
 Flask migrate was installed(tool that helps us interact with databases and tables).
 
-After following along https://www.askpython.com/python-modules/flask/flask-postgresql I will divert from the tutorial and make a simpler flask without the use of the app factory, as my understandng of flask is limited and and the tutorial was not enough for me to such 
+After following along on [askpython](https://www.askpython.com/python-modules/flask/flask-postgresql) I will divert from the tutorial and make a simpler flask without the use of the app factory, as my understandng of flask is limited and and the tutorial was not enough for me to such 
 a change to the app.
 
-Since my main goal as of now is to make the app use postgresql as a database, i will be focusing on learning about that.
-I will be following along the video https://www.youtube.com/watch?v=w25ea_I89iM to get my database set and running on my 
+Since my main goal as of now is to make the app use postgresql as a database, I will be focusing on learning about that.
+I will be following along a [video](https://www.youtube.com/watch?v=w25ea_I89iM) to get my database set and running on my 
 development eviroment and will als use this video to see how to deploe the final project.
 
 Since I have seen/read many tutorials, each with their own unique way of developing this project, I will be putting everything 
