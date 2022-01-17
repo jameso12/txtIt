@@ -6,10 +6,10 @@ I decided to make this website to apply and further my knowledge on the followin
 
 Goals:
 
-[] Figure out how to format/style this md file (make it look decent).
-[] Host it either on heroku or my rasberrypi 4. Preferrably heroku at first since I will probalby need to use heroku on my college course.
-[] Use postgresql as database (for the added challenge of diverting from the most tutorials).
-[] Avoid searching for tutorials of anyhing similar like the flask tutorial, or tutorials that make a website that is similar to this one.
+[ ] Figure out how to format/style this md file (make it look decent).
+[ ] Host it either on heroku or my rasberrypi 4. Preferrably heroku at first since I will probalby need to use heroku on my college course.
+[ ] Use postgresql as database (for the added challenge of diverting from the most tutorials).
+[ ] Avoid searching for tutorials of anyhing similar like the flask tutorial, or tutorials that make a website that is similar to this one.
 
 Technologies I being used:
 
