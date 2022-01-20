@@ -17,8 +17,12 @@ class DB:
         """This function creates the connection to the database and installs the necessary extension to it."""
         # Create connection
         self.db = create_engine(DB_STRING)
+
+    def installExtension(self):
         # Install extension
         self.db.execute(self.installExtensionCMD)
+        
+    def createTables(self):
         # TODO Create the users table
         self.db.execute()
         # TODO Create the posts table
