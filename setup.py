@@ -15,3 +15,7 @@ setup(
 # and run:
 # $ export FLASK_APP=flaskr
 # $ flask init-db
+
+#   581  export FLASK_APP=appT
+#   582  export FLASK_ENV=development
+#   583  flask run

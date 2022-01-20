@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS posts;
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE users (
   id uuid PRIMARY KEY DEFAULT uuid_generate_v4 (),
@@ -12,6 +13,6 @@ CREATE TABLE posts (
   author_id uuid NOT NULL,
   dateCreated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   title VARCHAR NOT NULL,
-  content VARCHAR NOT NULL,
+  body VARCHAR NOT NULL,
   FOREIGN KEY (author_id) REFERENCES users (id)
 );
