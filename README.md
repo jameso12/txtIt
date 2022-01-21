@@ -48,6 +48,9 @@ To make the database I came accross 2 sites that might help:
 I figured out how to work with a database, on python. All that is left is to start implementing the app.
 
 ### Learning
+- [g object and context manager])(https://flask.palletsprojects.com/en/2.0.x/appcontext/) 
+- [seesion](https://flask.palletsprojects.com/en/2.0.x/api/#flask.session)
+- [database conection practice](https://github.com/jameso12/psqlFlaskSnips)
 ## Additional Information
 References used to style this page:
 - https://google.github.io/styleguide/docguide/style.html#document-layout
