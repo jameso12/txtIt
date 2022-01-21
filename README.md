@@ -20,7 +20,10 @@ I decided to make this website to apply and further my knowledge on the followin
 * Postgresql
 * Jinja2
 
-### My Journey
+## My Journey
++ Lost in the world
++ Learning
+### Lost in the world
 Psycopg2 was installed because it is the adapter that allows psqlalchemy to work with postgresql.
 Flask migrate was installed(tool that helps us interact with databases and tables). (Not used for now 14/01/2021)
 
@@ -44,6 +47,7 @@ To make the database I came accross 2 sites that might help:
 
 I figured out how to work with a database, on python. All that is left is to start implementing the app.
 
+### Learning
 ## Additional Information
 References used to style this page:
 - https://google.github.io/styleguide/docguide/style.html#document-layout

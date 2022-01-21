@@ -1,46 +1,41 @@
-from flask import Flask, render_template, g, url_for, request, redirect, session
-
-import os
+from operator import index
+from flask import Flask, render_template, g, request, redirect, url_for, session
+from sqlalchemy import create_engine
 
 from flask import Flask
+# "postgresql://jamesacer:jamesacer@localhost:5432/test"
+import os
 
-
-def create_app(test_config=None):
+def create_app():
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
-    # set secret key and connect to db
-    app.config.from_mapping(
-        SECRET_KEY='dev',
-        DATABASE="postgresql://jamesacer:jamesacer@localhost:5432/test",
-    )
+    app.secret_key = 'misu'
+    @app.route('/', methods=['GET', 'POST'])
+    def register():
+        if request.method == 'POST':
+            username = request.form['username']
+            password = request.form['password']
+            error = None
 
-    if test_config is None:
-        # load the instance config, if it exists, when not testing
-        app.config.from_pyfile('config.py', silent=True)
-    else:
-        # load the test config if passed in
-        app.config.from_mapping(test_config)
+            if not username:
+                error = 'Username is required.'
+            elif not password:
+                error = 'Password is required.'
 
-    # ensure the instance folder exists
-    try:
-        os.makedirs(app.instance_path)
-    except OSError:
-        pass
+            if error is None:
+                session.pop('user', None)
+                session['user'] = username
+                with app.app_context():
+                    g.db = create_engine("postgresql://jamesacer:jamesacer@localhost:5432/test")
+                    g.db.execute(f"INSERT INTO om (username, password) VALUES ('{username}', '{password}')")
 
-    # a simple page that says hello
-    @app.route('/hello') # for some reason changing from /hello to just / solved the 404 error
-    def hello():
-        return 'Hello, World!'
+                return redirect(url_for("protected"))
+
+        return render_template('auth/register.html')
+
+    @app.route('/protected')
+    def protected():
+        return render_template('imp.html')
     
-    # import the db to the actual app
-    from . import db
-    db.init_app(app)
-    # import the auth routes into the actual app
-    from . import auth
-    app.register_blueprint(auth.bp)
-    # importing the blog(heart of this project) into the actual app
-    from . import blog
-    app.register_blueprint(blog.bp)
-    app.add_url_rule('/', endpoint='index')
-    # return instance of this app
+            
     return app
