@@ -48,7 +48,9 @@ To make the database I came accross 2 sites that might help:
 I figured out how to work with a database, on python. All that is left is to start implementing the app.
 
 ### Learning
-- [g object and context manager])(https://flask.palletsprojects.com/en/2.0.x/appcontext/) 
+After struggling with the making simply replacing some lines of code to mkae the project work with postgresql, I decided to redo the thing
+almost from scratch. I made a very simple flask app, it interacted with a postgresql and redirected to a another page(the page just said welcome). 
+- [g object and context manager](https://flask.palletsprojects.com/en/2.0.x/appcontext/) 
 - [seesion](https://flask.palletsprojects.com/en/2.0.x/api/#flask.session)
 - [database conection practice](https://github.com/jameso12/psqlFlaskSnips)
 ## Additional Information
