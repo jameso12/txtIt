@@ -23,6 +23,7 @@ I decided to make this website to apply and further my knowledge on the followin
 ## My Journey
 + Lost in the world
 + Learning
++ Initial Layout
 ### Lost in the world
 Psycopg2 was installed because it is the adapter that allows psqlalchemy to work with postgresql.
 Flask migrate was installed(tool that helps us interact with databases and tables). (Not used for now 14/01/2021)
@@ -53,6 +54,12 @@ almost from scratch. I made a very simple flask app, it interacted with a postgr
 - [g object and context manager](https://flask.palletsprojects.com/en/2.0.x/appcontext/) 
 - [seesion](https://flask.palletsprojects.com/en/2.0.x/api/#flask.session)
 - [database conection practice](https://github.com/jameso12/psqlFlaskSnips)
+### Initial Layout
+For the structure will as close as possible to the flask docs tutorial, since I am interested to learn through practice how downloading the 
+the project seemed so easy and how it was deployed. Additionally, to save time I kept the html files(I did some modifications on them) so that I could:
+1. get a working project faster (I plan on modifying the html files later on development)
+2. use my own css file and practice styling
+3. focus on making the backend of the project.
 ## Additional Information
 References used to style this page:
 - https://google.github.io/styleguide/docguide/style.html#document-layout
