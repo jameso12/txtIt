@@ -12,6 +12,10 @@ def create_app():
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.secret_key = 'misu'
+
+            
+    return app
+'''
     @app.route('/', methods=['GET', 'POST'])
     def register():
         if request.method == 'POST':
@@ -27,7 +31,7 @@ def create_app():
             if error is None:
                 session.pop('user', None)
                 session['user'] = username
-                with app.app_context():
+                with app.app_context(): # TODO for now I will use this to interacte with db, later I could encapsulate in another file
                     g.db = create_engine("postgresql://jamesacer:jamesacer@localhost:5432/test")
                     g.db.execute(f"INSERT INTO om (username, password) VALUES ('{username}', '{password}')")
 
@@ -38,6 +42,4 @@ def create_app():
     @app.route('/protected')
     def protected():
         return render_template('imp.html')
-    
-            
-    return app
+    '''
