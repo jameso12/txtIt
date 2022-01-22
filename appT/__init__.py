@@ -3,9 +3,11 @@ from flask import Flask, render_template, g, request, redirect, url_for, session
 from sqlalchemy import create_engine
 
 from flask import Flask
+# A local data base i am using
 # "postgresql://jamesacer:jamesacer@localhost:5432/test"
+# Another one i will b using is the textit one
 import os
-
+# app factory
 def create_app():
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
