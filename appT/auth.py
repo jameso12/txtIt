@@ -33,7 +33,8 @@ def login():
 @bp.route('/logout')
 def logout():
     # end the session
-    pass
+    session.clear()
+    g.user = None
 # Backen logic for register page
 @bp.route('/register', methods=("GET","POST"))
 def register():

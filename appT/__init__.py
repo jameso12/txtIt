@@ -14,7 +14,7 @@ def create_app(test_config=None):
 
     app.config.from_mapping(
         SECRET_KEY='misu',
-        DATABASE="postgresql://jamesacer:jamesacer@localhost:5432/test",
+        DATABASE="postgresql://jamesacer:jamesacer@localhost:5432/textit",
     )
 
     if test_config is None:
