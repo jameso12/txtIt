@@ -65,7 +65,14 @@ def register():
 #this will load the user into g.user making sure to have a reference to the db row
 @bp.before_app_request
 def loadLoggedUser():
-    pass
+    user_id = session.get('user_id')
+    if user_id is None:
+        g.user = None
+    else:
+        with current_app:
+            db = create_engine(current_app.config['DATABASE'])
+            g.user = db.execute(f"SELECT * FROM users WHERE id='{user_id}'").fetchone()
+
 #making sure the user is logged in for operations that requiere it
 def loginRequired(view):
     @functools.wraps(view)
