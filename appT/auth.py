@@ -1,5 +1,6 @@
 from crypt import methods
 from flask import Blueprint, flash, g, redirect, render_template, request, url_for, current_app, session
+from importlib_metadata import functools
 from sqlalchemy import create_engine
 
 bp = Blueprint("auth", __name__, url_prefix="/auth")
@@ -34,7 +35,7 @@ def login():
 def logout():
     # end the session
     session.clear()
-    g.user = None
+    return redirect(url_for('index'))
 # Backen logic for register page
 @bp.route('/register', methods=("GET","POST"))
 def register():
@@ -66,6 +67,12 @@ def register():
 def loadLoggedUser():
     pass
 #making sure the user is logged in for operations that requiere it
-def loginRequired():
-    # check to see if looged in maybe g.user
-    pass
+def loginRequired(view):
+    @functools.wraps(view)
+    def wrapped_view(**kwargs):
+        if g.user is None:
+            return redirect(url_for('auth.login'))
+
+        return view(**kwargs)
+
+    return wrapped_view
