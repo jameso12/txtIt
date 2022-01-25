@@ -28,7 +28,7 @@ def create():
         else:
             with current_app:
                 db = create_engine(current_app.config['DATABASE'])
-                db.execute(f'INSERT INTO post (title, body, author_id) VALUES ("{title}", "{body}", {g.user[0]}')
+                db.execute(f'INSERT INTO posts (title, body, author_id) VALUES ("{title}", "{body}", {g.user[0]}')
             redirect(url_for('blog.index'))
     return render_template("blog/create.html")
 
@@ -39,6 +39,15 @@ def update():
 # @bp.route('/create', methods = ('GET','POST'))
 def delete():
     pass
+
+@bp.route('/<int:id>/delete', methods=('POST',))
+@loadLoggedUser
+def delete(id):
+    getPost(id)
+    with current_app:
+        db = create_engine(current_app.config['DATABASE'])
+        db.execute(f'DELETE FROM posts WHERE id = {id}')
+    return redirect(url_for('blog.index'))
 # @bp.route('/create', methods = ('GET','POST'))
 def getPost():
     pass
