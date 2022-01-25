@@ -13,7 +13,7 @@ def login():
         error = None
         with current_app:
             db = create_engine(current_app.config['DATABASE'])
-            userRow = db.execute(f" select * from users where username='{username}'").fetchone()
+            userRow = db.execute(f"SELECT * FROM users WHERE username='{username}'").fetchone()
         if userRow is None: # Incorrect username
             error = "Username incorrect"
         elif password != userRow[2]: 
@@ -28,7 +28,7 @@ def login():
             return redirect(url_for('index'))
         flash(error)
 
-    return render_template('auth/login')
+    return render_template('auth/login.html')
 # backend logic for logout
 @bp.route('/logout')
 def logout():
@@ -59,7 +59,7 @@ def register():
                     db.execute(f'INSERT INTO users(username, password) VALUES("{username}", "{password}")')
                 return redirect(url_for('auth.login'))
         flash(error)
-    return render_template('auth/register')
+    return render_template('auth/register.html')
 
 #this will load the user into g.user making sure to have a reference to the db row
 @bp.before_app_request
