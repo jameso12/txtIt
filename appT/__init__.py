@@ -30,6 +30,14 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    # auth blueprint
+    from . import auth
+    app.register_blueprint(auth.bp)  
+    # blog blueprint
+    from . import blog
+    app.register_blueprint(blog.bp)
+    app.add_url_rule('/', endpoint='index')
+
     return app
 '''
     @app.route('/', methods=['GET', 'POST'])
